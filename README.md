@@ -161,8 +161,10 @@ David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twit
 
 Second part of Airbnb: Joann Vuong
 ##
-Airbnb_clone_V4 Authors
-Joe Wainaiana - github : https://github.com/iamjoee
-Nazarenegena - github: https://github.com/nazarenegena
+Airbnb_clone_v4 Authors 
+Joe Wainaina- github: https://github.com/iamjoee
+Nazarene Wanyaga - github: https://github.com/nazarenegena
+Updating the Airbnb_clone_v4 files in web_dynamics
+
 ## License
 Public Domain. No copy write protection. 
