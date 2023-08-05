@@ -1,0 +1,11 @@
+/* static/styles/3-header.css */
+#api_status {
+    background-color: #ff545f;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
