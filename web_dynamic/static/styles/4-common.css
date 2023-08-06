@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html {
 	position: relative;
 	min-height: 100%;
@@ -26,4 +27,16 @@ div.container {
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
+=======
+body {
+    margin: 0;
+    padding: 0;
+    color: #484848;
+    font-size: 14px;
+    font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+body .container {
+    max-width: 1000px;
+    margin: 30px auto;
+>>>>>>> 28b8064c8a1df4f7fa641630b90667ae6fd1ef88
 }
