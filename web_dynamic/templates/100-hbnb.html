@@ -1,0 +1,70 @@
+CTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>100-hbnb</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/3-header.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/100-places.css') }}">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="show-filters">
+            <h1 class="show-filters__title">Places</h1>
+            <div class="show-filters__toggle">
+              <input type="checkbox" id="toggle-filters">
+              <label for="toggle-filters">
+                <i class="fas fa-chevron-down"></i>
+              </label>
+            </div>
+          </div>
+          <div class="amenities">
+            <h2>Amenities:</h2>
+            <div class="amenities__filter">
+              <input type="checkbox" data-id="{{ amenity.id }}" data-name="{{ amenity.name }}">
+              <span>{{ amenity.name }}</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12" id="locations">
+          <div class="locations__states">
+            <h2>States:</h2>
+            <ul>
+              {% for state in states %}
+              <li>
+                <input type="checkbox" data-id="{{ state.id }}" data-name="{{ state.name }}">
+                <span>{{ state.name }}</span>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="locations__cities">
+            <h2>Cities:</h2>
+            <ul>
+              {% for city in cities %}
+              <li>
+                <input type="checkbox" data-id="{{ city.id }}" data-name="{{ city.name }}">
+                <span>{{ city.name }}</span>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+          <h4>&nbsp;</h4>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="places">
+    <!-- Places here -->
+  </section>
+
+  <script src="{{ url_for('static', filename='scripts/100-hbnb.js') }}"></script>
+</body>
+</html>
+
